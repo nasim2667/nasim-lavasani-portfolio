@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nasim Eskandar Lavasani — Senior Product Designer and Design Lead with 10+ years of experience in product design, UX strategy, banking, fintech, and enterprise products.">
+<meta property="og:title" content="Nasim Eskandar Lavasani — Senior Product Designer">
+<meta property="og:description" content="Senior Product Designer · Design Lead · Product Design · UX Strategy">
+<meta name="theme-color" content="#1E0A3C">
+<title>Nasim Eskandar Lavasani — Senior Product Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Nasim  Lavasani — Senior Product Designer_files/css2" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAF9FC;
+    --bg-alt:#F1ECFB;
+    --surface:#FFFFFF;
+    --ink:#150F22;
+    --ink-soft:#5B5468;
+    --ink-faint:#8B84A0;
+    --violet-950:#1E0A3C;
+    --violet-900:#2B1050;
+    --violet-800:#3B1878;
+    --violet-700:#5B21B6;
+    --violet-600:#7C3AED;
+    --violet-500:#9061F0;
+    --violet-400:#A78BFA;
+    --violet-200:#DDD6FE;
+    --violet-100:#EEE9FB;
+    --line:#E4DEF5;
+    --up:#1F9D6B;
+    --down:#7C3AED;
+    --radius:14px;
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.55;
+  }
+  h1,h2,h3,.display{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    letter-spacing:-0.01em;
+    color:var(--violet-950);
+    margin:0;
+  }
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 32px;}
+  @media (max-width:640px){ .wrap{padding:0 20px;} }
+
+  /* ---------- NAV ---------- */
+  header.nav{
+    position:sticky; top:0; z-index:100;
+    background:rgba(250,249,252,0.86);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:var(--maxw); margin:0 auto; padding:16px 32px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  @media (max-width:640px){ .nav-inner{padding:14px 20px;} }
+  .nav-name{
+    font-family:'Fraunces',serif; font-weight:600; font-size:17px; color:var(--violet-950);
+    white-space:nowrap;
+  }
+  .nav-name span{color:var(--violet-600);}
+  nav.links{display:flex; gap:26px;}
+  nav.links a{
+    font-size:13px; font-weight:500; text-decoration:none; color:var(--ink-soft);
+    letter-spacing:0.02em; text-transform:uppercase; font-family:'IBM Plex Mono',monospace;
+    padding-bottom:4px; border-bottom:2px solid transparent; transition:color .2s, border-color .2s;
+  }
+  nav.links a:hover, nav.links a.active{color:var(--violet-700); border-color:var(--violet-500);}
+  @media (max-width:900px){ nav.links{display:none;} }
+  .nav-cta{
+    font-size:13px; font-weight:600; background:var(--violet-950); color:#fff;
+    padding:9px 16px; border-radius:100px; text-decoration:none; white-space:nowrap;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative; overflow:hidden;
+    background:
+      radial-gradient(circle at 1px 1px, var(--violet-200) 1.4px, transparent 1.4px) 0 0/26px 26px,
+      var(--bg-alt);
+    border-bottom:1px solid var(--line);
+  }
+  .hero-inner{
+    max-width:var(--maxw); margin:0 auto; padding:100px 32px 70px;
+    position:relative; z-index:2;
+  }
+  @media (max-width:640px){ .hero-inner{padding:64px 20px 48px;} }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace; font-size:12.5px; letter-spacing:0.14em; text-transform:uppercase;
+    color:var(--violet-700); display:flex; align-items:center; gap:10px; margin-bottom:22px;
+  }
+  .eyebrow::before{content:''; width:8px; height:8px; border-radius:50%; background:var(--violet-600); box-shadow:0 0 0 4px var(--violet-200);}
+  h1.hero-title{
+    font-size:clamp(38px, 6vw, 68px); line-height:1.02; font-weight:600; max-width:15ch;
+  }
+  h1.hero-title em{font-style:italic; font-weight:500; color:var(--violet-700);}
+  .hero-sub{
+    max-width:620px; font-size:18px; color:var(--ink-soft); margin-top:24px;
+  }
+  .hero-meta{
+    display:flex; gap:28px; flex-wrap:wrap; margin-top:36px;
+  }
+  .hero-meta .stat{font-family:'IBM Plex Mono',monospace;}
+  .hero-meta .stat b{display:block; font-size:22px; color:var(--violet-800); font-weight:600;}
+  .hero-meta .stat span{font-size:12px; color:var(--ink-faint); text-transform:uppercase; letter-spacing:0.06em;}
+  .hero-actions{display:flex; gap:14px; margin-top:40px; flex-wrap:wrap;}
+  .btn-primary{
+    background:var(--violet-950); color:#fff; padding:13px 24px; border-radius:100px;
+    text-decoration:none; font-weight:600; font-size:14.5px; display:inline-flex; align-items:center; gap:8px;
+    transition:transform .18s ease, background .2s;
+  }
+  .btn-primary:hover{transform:translateY(-2px); background:var(--violet-700);}
+  .btn-secondary{
+    border:1.5px solid var(--violet-400); color:var(--violet-800); padding:12px 22px; border-radius:100px;
+    text-decoration:none; font-weight:600; font-size:14.5px; transition:background .2s, transform .18s;
+  }
+  .btn-secondary:hover{background:var(--violet-100); transform:translateY(-2px);}
+
+  /* process stepper in hero */
+  .flow{
+    margin-top:64px; border-top:1px solid var(--line); padding-top:28px;
+  }
+  .flow-label{font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--ink-faint); margin-bottom:16px;}
+  .flow-steps{display:flex; gap:8px; flex-wrap:wrap;}
+  .flow-step{
+    font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:500; color:var(--ink-soft);
+    background:var(--surface); border:1px solid var(--line); padding:9px 16px; border-radius:100px;
+    cursor:pointer; transition:all .2s; display:flex; align-items:center; gap:8px;
+  }
+  .flow-step .n{color:var(--violet-400); font-size:11px;}
+  .flow-step:hover{border-color:var(--violet-400);}
+  .flow-step.active{background:var(--violet-950); color:#fff; border-color:var(--violet-950);}
+  .flow-step.active .n{color:var(--violet-300, #C4B5FD);}
+  .flow-panel{
+    margin-top:20px; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    padding:22px 26px; font-size:15px; color:var(--ink-soft); max-width:640px;
+  }
+  .flow-panel b{color:var(--violet-800); font-family:'Fraunces',serif; font-weight:600; font-size:16px;}
+
+  /* ---------- SECTION GENERIC ---------- */
+  section{padding:88px 0;}
+  @media (max-width:640px){ section{padding:56px 0;} }
+  .section-head{margin-bottom:48px; max-width:640px;}
+  .section-head .eyebrow{margin-bottom:14px;}
+  .section-head h2{font-size:clamp(28px,3.6vw,40px);}
+  .section-head p{color:var(--ink-soft); margin-top:14px; font-size:16px;}
+
+  .reveal{opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+
+  /* ---------- IMPACT DASHBOARD ---------- */
+  .dash-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+  @media (max-width:900px){ .dash-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:600px){ .dash-grid{grid-template-columns:1fr;} }
+  .kpi-card{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    padding:22px 22px 18px; position:relative; overflow:hidden;
+  }
+  .kpi-card::before{
+    content:''; position:absolute; top:0; left:0; right:0; height:3px; background:var(--violet-600);
+  }
+  .kpi-top{display:flex; justify-content:space-between; align-items:flex-start; gap:10px;}
+  .kpi-label{font-size:12.5px; color:var(--ink-faint); text-transform:uppercase; letter-spacing:0.05em; font-family:'IBM Plex Mono',monospace; max-width:75%;}
+  .kpi-dir{font-size:12px; font-weight:600; padding:3px 8px; border-radius:6px; font-family:'IBM Plex Mono',monospace;}
+  .kpi-dir.up{color:var(--up); background:#E6F6EF;}
+  .kpi-dir.down{color:var(--violet-700); background:var(--violet-100);}
+  .kpi-num{font-family:'Fraunces',serif; font-weight:700; font-size:40px; color:var(--violet-950); margin-top:14px; display:flex; align-items:baseline; gap:2px;}
+  .kpi-num .pct{font-size:22px; color:var(--violet-500);}
+  .kpi-desc{font-size:13.5px; color:var(--ink-soft); margin-top:6px;}
+  .kpi-spark{margin-top:14px; width:100%; height:34px; display:block;}
+
+  /* ---------- EXPERIENCE ---------- */
+  .timeline{position:relative; padding-left:32px; border-left:1.5px solid var(--line);}
+  @media (max-width:640px){ .timeline{padding-left:20px;} }
+  .tl-item{position:relative; padding-bottom:6px; margin-bottom:6px;}
+  .tl-item::before{
+    content:''; position:absolute; left:-38px; top:8px; width:11px; height:11px; border-radius:50%;
+    background:var(--surface); border:2.5px solid var(--violet-500);
+  }
+  @media (max-width:640px){ .tl-item::before{left:-26px; width:9px; height:9px;} }
+  .tl-item.current::before{background:var(--violet-700);}
+  details.tl-card{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    margin-bottom:20px; overflow:hidden;
+  }
+  details.tl-card summary{
+    list-style:none; cursor:pointer; padding:20px 24px; display:flex; justify-content:space-between;
+    align-items:center; gap:16px; flex-wrap:wrap;
+  }
+  details.tl-card summary::-webkit-details-marker{display:none;}
+  .tl-head-left{display:flex; flex-direction:column; gap:4px;}
+  .tl-role{font-family:'Fraunces',serif; font-size:19px; font-weight:600; color:var(--violet-950);}
+  .tl-company{font-size:13px; color:var(--violet-700); font-weight:600; font-family:'IBM Plex Mono',monospace; text-transform:uppercase; letter-spacing:0.04em;}
+  .tl-dates{font-size:12.5px; color:var(--ink-faint); font-family:'IBM Plex Mono',monospace; white-space:nowrap;}
+  .tl-toggle{
+    width:26px; height:26px; border-radius:50%; border:1px solid var(--violet-300,var(--violet-400));
+    display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--violet-700);
+    transition:transform .25s;
+  }
+  details[open] .tl-toggle{transform:rotate(45deg);}
+  .tl-body{padding:0 24px 24px; border-top:1px solid var(--line); margin-top:4px;}
+  .tl-body ul{margin:16px 0 0; padding-left:18px; color:var(--ink-soft); font-size:14.5px;}
+  .tl-body li{margin-bottom:7px;}
+  .tl-case{
+    margin-top:18px; background:var(--violet-100); border-radius:10px; padding:14px 16px;
+    font-size:13.5px; color:var(--violet-900);
+  }
+  .tl-case b{font-family:'IBM Plex Mono',monospace; text-transform:uppercase; font-size:11px; letter-spacing:0.05em; display:block; margin-bottom:6px; color:var(--violet-700);}
+
+  /* ---------- EXPERTISE ---------- */
+  .exp-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  @media (max-width:800px){ .exp-grid{grid-template-columns:1fr;} }
+  .exp-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:28px;}
+  .exp-card h3{font-size:18px; margin-bottom:16px; display:flex; align-items:center; gap:10px;}
+  .exp-card h3 .dot{width:9px; height:9px; border-radius:50%; background:var(--violet-600); flex-shrink:0;}
+  .exp-card ul{margin:0; padding:0; list-style:none;}
+  .exp-card li{
+    font-size:14px; color:var(--ink-soft); padding:9px 0; border-top:1px solid var(--line);
+  }
+  .exp-card li:first-child{border-top:none;}
+
+  /* ---------- PROCESS (full) ---------- */
+  .process-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+  @media (max-width:800px){ .process-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:520px){ .process-grid{grid-template-columns:1fr;} }
+  .proc-card{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:22px;
+    transition:border-color .2s, transform .2s;
+  }
+  .proc-card:hover{border-color:var(--violet-400); transform:translateY(-3px);}
+  .proc-num{font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--violet-400);}
+  .proc-title{font-family:'Fraunces',serif; font-weight:600; font-size:19px; color:var(--violet-950); margin:6px 0 8px;}
+  .proc-desc{font-size:13.5px; color:var(--ink-soft);}
+
+  /* ---------- TOOLS ---------- */
+  .tools-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
+  @media (max-width:800px){ .tools-grid{grid-template-columns:1fr 1fr;} }
+  .tool-group h4{
+    font-family:'IBM Plex Mono',monospace; font-size:12px; text-transform:uppercase; letter-spacing:0.06em;
+    color:var(--violet-700); margin-bottom:12px;
+  }
+  .chip-row{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{
+    font-size:12.5px; background:var(--violet-100); color:var(--violet-800); padding:6px 12px;
+    border-radius:100px; font-weight:500;
+  }
+
+  /* ---------- EDU ---------- */
+  .edu-grid{display:grid; grid-template-columns:1fr 1fr; gap:20px;}
+  @media (max-width:640px){ .edu-grid{grid-template-columns:1fr;} }
+  .edu-card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:24px;}
+  .edu-card .yr{font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--violet-500);}
+  .edu-card h4{font-family:'Fraunces',serif; font-size:17px; margin:6px 0 4px; color:var(--violet-950);}
+  .edu-card p{font-size:13.5px; color:var(--ink-soft); margin:0;}
+
+  /* ---------- CONTACT / FOOTER ---------- */
+  footer{
+    background:var(--violet-950); color:#fff; padding:80px 0 40px; margin-top:40px;
+  }
+  footer h2{color:#fff; font-size:clamp(30px,4vw,46px); max-width:14ch;}
+  footer p.sub{color:var(--violet-200); max-width:480px; margin-top:16px; font-size:16px;}
+  .contact-grid{display:flex; gap:16px; flex-wrap:wrap; margin-top:40px;}
+  .contact-item{
+    background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.14); border-radius:var(--radius);
+    padding:18px 22px; flex:1; min-width:220px; text-decoration:none; transition:background .2s, transform .2s;
+  }
+  .contact-item:hover{background:rgba(255,255,255,0.12); transform:translateY(-2px);}
+  .contact-item .k{font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--violet-300,#C4B5FD);}
+  .contact-item .v{font-size:15px; font-weight:600; margin-top:6px; color:#fff;}
+  .foot-bottom{
+    margin-top:56px; padding-top:24px; border-top:1px solid rgba(255,255,255,0.14);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+    font-size:12.5px; color:var(--violet-300,#C4B5FD); font-family:'IBM Plex Mono',monospace;
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="nav-name">Nasim Eskandar <span>Lavasani</span></div>
+    <nav class="links" id="navLinks">
+      <a href="#impact">Impact</a>
+      <a href="#experience">Experience</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#process">Process</a>
+      <a href="#tools">Tools</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Get in touch</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Senior Product Designer · Design Lead</div>
+    <h1 class="hero-title">Nasim Lavasani<em>senior product design </em></h1>
+    <p class="hero-sub">10+ Years of Experience in Product Design, UX Strategy &amp; Design Leadership
+
+Senior Product Designer and Design Lead with 10+ years of experience designing and improving digital products, with a strong background in banking, fintech, and enterprise products.
+
+Experienced in translating complex business requirements and user needs into simple, scalable, and measurable product experiences. Strong background across Product Discovery, UX Research, Problem Definition, End-to-End Product Design, KPI-driven optimization, and Design Leadership.
+
+Experienced in leading projects from discovery through design and delivery, collaborating closely with Product, Engineering, Business, and Security teams to align user needs, business objectives, and technical constraints.</p>
+
+    <div class="hero-meta">
+      <div class="stat"><b>10+</b><span>Years in Product Design</span></div>
+      <div class="stat"><b>7</b><span>Companies led design at</span></div>
+      <div class="stat"><b>30%</b><span>Task time reduced, A‑Bank</span></div>
+      <div class="stat"><b>28%</b><span>Task completion ↑, KLD</span></div>
+    </div>
+
+    <div class="hero-actions">
+      <a class="btn-primary" href="mailto:Nasimeskandar@gmail.com">Email me →</a>
+      <a class="btn-secondary" href="https://nasimlavasani.my.canva.site/" target="_blank" rel="noopener">Full case studies</a>
+      <a class="btn-secondary" href="#experience">See experience</a>
+    </div>
+
+    <div class="flow">
+      <div class="flow-label">My product design loop — click a stage</div>
+      <div class="flow-steps" id="flowSteps">
+        <button class="flow-step" data-i="0"><span class="n">01</span> Discover</button>
+        <button class="flow-step" data-i="1"><span class="n">02</span> Define</button>
+        <button class="flow-step" data-i="2"><span class="n">03</span> Design</button>
+        <button class="flow-step" data-i="3"><span class="n">04</span> Validate</button>
+        <button class="flow-step" data-i="4"><span class="n">05</span> Measure</button>
+        <button class="flow-step active" data-i="5"><span class="n">06</span> Improve</button>
+      </div>
+      <div class="flow-panel" id="flowPanel"><b>Improve.</b> Continuous optimization based on evidence, user feedback, and product outcomes.</div>
+    </div>
+  </div>
+</section>
+
+<section id="impact">
+  <div class="wrap">
+    <div class="section-head reveal in">
+      <div class="eyebrow">Selected impact</div>
+      <h2>Design decisions, measured.</h2>
+      
+    </div>
+    <div class="dash-grid" id="dashGrid">
+    <div class="kpi-card reveal in" style="transition-delay:0s">
+      <div class="kpi-top">
+        <div class="kpi-label">Key Banking Operations</div>
+        <div class="kpi-dir down">↓ down</div>
+      </div>
+      <div class="kpi-num"><span class="count" data-target="30">30</span><span class="pct">%</span></div>
+      <div class="kpi-desc">Task time reduced</div>
+      <svg class="kpi-spark" viewBox="0 0 48 32" preserveAspectRatio="none">
+        <path d="M2,4 C10,8 16,14 24,16 C32,18 40,24 46,28" fill="none" stroke="var(--violet-500)" stroke-width="2" stroke-linecap="round"></path>
+      </svg>
+    </div>
+  
+    <div class="kpi-card reveal in" style="transition-delay:0.06s">
+      <div class="kpi-top">
+        <div class="kpi-label">Digital Signature Dashboard</div>
+        <div class="kpi-dir down">↓ down</div>
+      </div>
+      <div class="kpi-num"><span class="count" data-target="25">25</span><span class="pct">%</span></div>
+      <div class="kpi-desc">User errors reduced</div>
+      <svg class="kpi-spark" viewBox="0 0 48 32" preserveAspectRatio="none">
+        <path d="M2,4 C10,8 16,14 24,16 C32,18 40,24 46,28" fill="none" stroke="var(--violet-500)" stroke-width="2" stroke-linecap="round"></path>
+      </svg>
+    </div>
+  
+    <div class="kpi-card reveal in" style="transition-delay:0.12s">
+      <div class="kpi-top">
+        <div class="kpi-label">Banking Flows</div>
+        <div class="kpi-dir down">↓ down</div>
+      </div>
+      <div class="kpi-num"><span class="count" data-target="22">22</span><span class="pct">%</span></div>
+      <div class="kpi-desc">Drop‑off rate reduced</div>
+      <svg class="kpi-spark" viewBox="0 0 48 32" preserveAspectRatio="none">
+        <path d="M2,4 C10,8 16,14 24,16 C32,18 40,24 46,28" fill="none" stroke="var(--violet-500)" stroke-width="2" stroke-linecap="round"></path>
+      </svg>
+    </div>
+  
+    <div class="kpi-card reveal in" style="transition-delay:0s">
+      <div class="kpi-top">
+        <div class="kpi-label">Operational Success Rate</div>
+        <div class="kpi-dir up">↑ up</div>
+      </div>
+      <div class="kpi-num"><span class="count" data-target="18">18</span><span class="pct">%</span></div>
+      <div class="kpi-desc">Success rate increased</div>
+      <svg class="kpi-spark" viewBox="0 0 48 32" preserveAspectRatio="none">
+        <path d="M2,28 C10,26 16,20 24,18 C32,16 40,10 46,4" fill="none" stroke="var(--up)" stroke-width="2" stroke-linecap="round"></path>
+      </svg>
+    </div>
+  
+    <div class="kpi-card reveal in" style="transition-delay:0.06s">
+      <div class="kpi-top">
+        <div class="kpi-label">Multi‑account Banking</div>
+        <div class="kpi-dir up">↑ up</div>
+      </div>
+      <div class="kpi-num"><span class="count" data-target="28">28</span><span class="pct">%</span></div>
+      <div class="kpi-desc">Task completion increased</div>
+      <svg class="kpi-spark" viewBox="0 0 48 32" preserveAspectRatio="none">
+        <path d="M2,28 C10,26 16,20 24,18 C32,16 40,10 46,4" fill="none" stroke="var(--up)" stroke-width="2" stroke-linecap="round"></path>
+      </svg>
+    </div>
+  
+    <div class="kpi-card reveal in" style="transition-delay:0.12s">
+      <div class="kpi-top">
+        <div class="kpi-label">User Onboarding</div>
+        <div class="kpi-dir down">↓ down</div>
+      </div>
+      <div class="kpi-num"><span class="count" data-target="22">22</span><span class="pct">%</span></div>
+      <div class="kpi-desc">Onboarding time reduced</div>
+      <svg class="kpi-spark" viewBox="0 0 48 32" preserveAspectRatio="none">
+        <path d="M2,4 C10,8 16,14 24,16 C32,18 40,24 46,28" fill="none" stroke="var(--violet-500)" stroke-width="2" stroke-linecap="round"></path>
+      </svg>
+    </div>
+  
+    <div class="kpi-card reveal in" style="transition-delay:0s">
+      <div class="kpi-top">
+        <div class="kpi-label">Danayan Product</div>
+        <div class="kpi-dir up">↑ up</div>
+      </div>
+      <div class="kpi-num"><span class="count" data-target="25">25</span><span class="pct">%</span></div>
+      <div class="kpi-desc">Engagement increased</div>
+      <svg class="kpi-spark" viewBox="0 0 48 32" preserveAspectRatio="none">
+        <path d="M2,28 C10,26 16,20 24,18 C32,16 40,10 46,4" fill="none" stroke="var(--up)" stroke-width="2" stroke-linecap="round"></path>
+      </svg>
+    </div>
+  
+    <div class="kpi-card reveal in" style="transition-delay:0.06s">
+      <div class="kpi-top">
+        <div class="kpi-label">User Experience</div>
+        <div class="kpi-dir down">↓ down</div>
+      </div>
+      <div class="kpi-num"><span class="count" data-target="20">20</span><span class="pct">%</span></div>
+      <div class="kpi-desc">Friction points reduced</div>
+      <svg class="kpi-spark" viewBox="0 0 48 32" preserveAspectRatio="none">
+        <path d="M2,4 C10,8 16,14 24,16 C32,18 40,24 46,28" fill="none" stroke="var(--violet-500)" stroke-width="2" stroke-linecap="round"></path>
+      </svg>
+    </div>
+  
+    <div class="kpi-card reveal in" style="transition-delay:0.12s">
+      <div class="kpi-top">
+        <div class="kpi-label">Danayan Tasks</div>
+        <div class="kpi-dir up">↑ up</div>
+      </div>
+      <div class="kpi-num"><span class="count" data-target="15">15</span><span class="pct">%</span></div>
+      <div class="kpi-desc">Task completion increased</div>
+      <svg class="kpi-spark" viewBox="0 0 48 32" preserveAspectRatio="none">
+        <path d="M2,28 C10,26 16,20 24,18 C32,16 40,10 46,4" fill="none" stroke="var(--up)" stroke-width="2" stroke-linecap="round"></path>
+      </svg>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section id="experience" style="background:var(--bg-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head reveal in">
+      <div class="eyebrow">Professional experience</div>
+      <h2>Where the work happened.</h2>
+      <p>Tap any role to open the full scope — from banking dashboards to fintech onboarding to leading design teams.</p>
+    </div>
+    <div class="timeline" id="timeline">
+    <div class="tl-item current reveal in">
+      <details class="tl-card" open="">
+        <summary>
+          <div class="tl-head-left">
+            <div class="tl-role">Senior Product Designer</div>
+            <div class="tl-company">EFARDA</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div class="tl-dates">Jul 2025 – Present</div>
+            <div class="tl-toggle">+</div>
+          </div>
+        </summary>
+        <div class="tl-body">
+          <div class="mono" style="font-size:12px;color:var(--ink-faint);margin-top:14px;">Product Design · UX Strategy · Data-driven Design · Banking Products</div>
+          <ul><li>Lead the end-to-end product design lifecycle, from research and problem definition through wireframing, interaction design, prototyping, and development handoff.</li><li>Partner closely with Product, Development, and Security teams to deliver cohesive and feasible product experiences.</li><li>Define and analyze product experience KPIs including Task Completion Time, Success Rate, Drop-off Rate, and Error Rate.</li><li>Designed and optimized a digital signature management dashboard to improve operational efficiency.</li><li>Simplified flows for defining and modifying signatory authorities.</li><li>Designed security patterns for joint and corporate accounts while maintaining alignment with banking standards and compliance requirements.</li></ul>
+          <div class="tl-case"><b>Selected case study — A-Bank — Banking Dashboard</b>30% ↓ Task Time · 25% ↓ User Errors · 22% ↓ Drop-off · 18% ↑ Success Rate</div>
+        </div>
+      </details>
+    </div>
+  
+    <div class="tl-item reveal in">
+      <details class="tl-card">
+        <summary>
+          <div class="tl-head-left">
+            <div class="tl-role">Senior Product Designer</div>
+            <div class="tl-company">DANAYAN</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div class="tl-dates">Nov 2024 – Jun 2025</div>
+            <div class="tl-toggle">+</div>
+          </div>
+        </summary>
+        <div class="tl-body">
+          <div class="mono" style="font-size:12px;color:var(--ink-faint);margin-top:14px;">Product Discovery · UX Research · Product Design</div>
+          <ul><li>Led the design of two digital products from research and discovery through high-fidelity design and interactive prototyping.</li><li>Conducted user research, journey mapping, and ideation to identify product opportunities and user pain points.</li><li>Translated research insights into practical and scalable design solutions.</li><li>Developed the product's visual personality and strengthened alignment between brand and product experience.</li><li>Continuously tested and iterated the experience based on user needs and market expectations.</li></ul>
+          <div class="tl-case"><b>Selected case study — Danayan App</b>25% ↑ Engagement · 15% ↑ Task Completion · 20% ↓ Friction</div>
+        </div>
+      </details>
+    </div>
+  
+    <div class="tl-item reveal in">
+      <details class="tl-card">
+        <summary>
+          <div class="tl-head-left">
+            <div class="tl-role">Team Lead — Product Designer</div>
+            <div class="tl-company">ADANIC</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div class="tl-dates">Aug 2020 – Aug 2023</div>
+            <div class="tl-toggle">+</div>
+          </div>
+        </summary>
+        <div class="tl-body">
+          <div class="mono" style="font-size:12px;color:var(--ink-faint);margin-top:14px;">Design Leadership · Product Strategy · UX Research · Banking Products</div>
+          <ul><li>Led the design team for the end-to-end redesign of Keylead, a multi-account banking application.</li><li>Directed the design process from research and problem definition through interaction design, prototyping, and delivery.</li><li>Facilitated stakeholder workshops to identify critical challenges across banking workflows.</li><li>Established alignment across Design, Product, and Development teams.</li><li>Introduced shared design standards and improved consistency across the design team.</li><li>Delivered scalable and implementation-ready product solutions.</li></ul>
+          <div class="tl-case"><b>Selected case study — Multi-account Banking System — KLD</b>30% ↓ User Errors · 28% ↑ Task Completion · 22% ↓ Onboarding Time</div>
+        </div>
+      </details>
+    </div>
+  
+    <div class="tl-item reveal in">
+      <details class="tl-card">
+        <summary>
+          <div class="tl-head-left">
+            <div class="tl-role">Product Designer — UI/UX</div>
+            <div class="tl-company">SADAD PSP</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div class="tl-dates">May 2019 – Jul 2020</div>
+            <div class="tl-toggle">+</div>
+          </div>
+        </summary>
+        <div class="tl-body">
+          <div class="mono" style="font-size:12px;color:var(--ink-faint);margin-top:14px;">UX Strategy · User Research · Flow Design</div>
+          <ul><li>Contributed to UX strategy and led design activities within the team.</li><li>Conducted user research and secondary research to identify user pain points and sources of dissatisfaction.</li><li>Analyzed behavioral data and translated insights into effective UX solutions.</li><li>Designed and optimized product user flows, wireframes, and interactive prototypes.</li><li>Focused on improving user onboarding and overall experience efficiency.</li></ul>
+          
+        </div>
+      </details>
+    </div>
+  
+    <div class="tl-item reveal in">
+      <details class="tl-card">
+        <summary>
+          <div class="tl-head-left">
+            <div class="tl-role">Web UI / UX Designer</div>
+            <div class="tl-company">TOSAN &amp; TECHVEST</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div class="tl-dates">Apr 2016 – Jun 2019</div>
+            <div class="tl-toggle">+</div>
+          </div>
+        </summary>
+        <div class="tl-body">
+          <div class="mono" style="font-size:12px;color:var(--ink-faint);margin-top:14px;">B2B &amp; B2C · Fintech · Visual Design</div>
+          <ul><li>Conducted UX research to improve B2B and B2C digital experiences.</li><li>Designed UI and UX solutions for digital products and fintech projects.</li><li>Collaborated with technical and marketing teams to translate business requirements into design solutions.</li><li>Contributed to branding and visual identity initiatives across platforms.</li></ul>
+          
+        </div>
+      </details>
+    </div>
+  
+    <div class="tl-item reveal in">
+      <details class="tl-card">
+        <summary>
+          <div class="tl-head-left">
+            <div class="tl-role">UI / Visual Designer</div>
+            <div class="tl-company">DATA LEADING PISHRO</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div class="tl-dates">Jan 2015 – Mar 2016</div>
+            <div class="tl-toggle">+</div>
+          </div>
+        </summary>
+        <div class="tl-body">
+          <div class="mono" style="font-size:12px;color:var(--ink-faint);margin-top:14px;">Visual Direction · Brand</div>
+          <ul><li>Designed UI, web elements, graphics, and storyboards for digital products.</li><li>Contributed to product strategy and brand design decisions.</li><li>Developed visual directions for product features and supported advertising campaigns.</li></ul>
+          
+        </div>
+      </details>
+    </div>
+  
+    <div class="tl-item reveal in">
+      <details class="tl-card">
+        <summary>
+          <div class="tl-head-left">
+            <div class="tl-role">Junior Graphic Designer</div>
+            <div class="tl-company">MILATECHNUTRI</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div class="tl-dates">Dec 2013 – Jul 2014</div>
+            <div class="tl-toggle">+</div>
+          </div>
+        </summary>
+        <div class="tl-body">
+          <div class="mono" style="font-size:12px;color:var(--ink-faint);margin-top:14px;">Graphic Design · Branding</div>
+          <ul><li>Collaborated with Marketing and Content teams on visual campaigns.</li><li>Designed graphics, posters, brochures, and packaging.</li><li>Applied brand guidelines across visual assets and digital product elements.</li></ul>
+          
+        </div>
+      </details>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section id="expertise">
+  <div class="wrap">
+    <div class="section-head reveal in">
+      <div class="eyebrow">Core expertise</div>
+      <h2>Where design meets product strategy.</h2>
+    </div>
+    <div class="exp-grid" id="expertiseGrid">
+    <div class="exp-card reveal in">
+      <h3><span class="dot"></span>Product Design</h3>
+      <ul><li>Product Discovery &amp; Problem Definition</li><li>UX Research &amp; User Interviews</li><li>User Journey &amp; Service Flow Mapping</li><li>Information Architecture</li><li>Wireframing &amp; Prototyping</li><li>Interaction Design</li><li>Usability Testing</li><li>Design Systems</li><li>End-to-End Product Design</li><li>Data-informed Design</li></ul>
+    </div>
+  
+    <div class="exp-card reveal in">
+      <h3><span class="dot"></span>Product &amp; Strategy</h3>
+      <ul><li>Business &amp; User Requirement Analysis</li><li>Opportunity Identification &amp; Prioritization</li><li>Business Requirements → UX Solutions</li><li>KPI Definition &amp; Analysis</li><li>Behavioral &amp; Funnel Analysis</li><li>Product Strategy Contribution</li><li>Roadmap Collaboration</li><li>Stakeholder Management</li><li>Cross-functional Decision Making</li></ul>
+    </div>
+  
+    <div class="exp-card reveal in">
+      <h3><span class="dot"></span>Design Leadership</h3>
+      <ul><li>Team Leadership &amp; Mentoring</li><li>Design Process &amp; Workflow Definition</li><li>Quality Standards &amp; Design Reviews</li><li>Feedback &amp; Critique</li><li>Design / Product / Eng Alignment</li><li>Cross-functional Project Leadership</li><li>End-to-End Delivery Management</li></ul>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section id="process" style="background:var(--bg-alt); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="section-head reveal in">
+      <div class="eyebrow">Product &amp; design leadership</div>
+      <h2>Discover → Define → Design → Validate → Measure → Improve</h2>
+      <p>The loop I run on every product, from a single flow redesign to a full banking dashboard.</p>
+    </div>
+    <div class="process-grid" id="processGrid">
+    <div class="proc-card reveal in" style="transition-delay:0s">
+      <div class="proc-num">01</div>
+      <div class="proc-title">Discover</div>
+      <div class="proc-desc">User research, interviews, behavioral analysis, and pain‑point discovery.</div>
+    </div>
+  
+    <div class="proc-card reveal in" style="transition-delay:0.06s">
+      <div class="proc-num">02</div>
+      <div class="proc-title">Define</div>
+      <div class="proc-desc">Problem framing, user journeys, opportunity identification, and experience definition.</div>
+    </div>
+  
+    <div class="proc-card reveal in" style="transition-delay:0.12s">
+      <div class="proc-num">03</div>
+      <div class="proc-title">Design</div>
+      <div class="proc-desc">Wireframes, prototypes, interaction design, and design systems.</div>
+    </div>
+  
+    <div class="proc-card reveal in" style="transition-delay:0s">
+      <div class="proc-num">04</div>
+      <div class="proc-title">Validate</div>
+      <div class="proc-desc">Usability testing, feedback collection, and iterative design.</div>
+    </div>
+  
+    <div class="proc-card reveal in" style="transition-delay:0.06s">
+      <div class="proc-num">05</div>
+      <div class="proc-title">Measure</div>
+      <div class="proc-desc">KPI analysis, funnel performance, task completion, and behavioral metrics.</div>
+    </div>
+  
+    <div class="proc-card reveal in" style="transition-delay:0.12s">
+      <div class="proc-num">06</div>
+      <div class="proc-title">Improve</div>
+      <div class="proc-desc">Continuous optimization based on evidence, user feedback, and product outcomes.</div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section id="tools">
+  <div class="wrap">
+    <div class="section-head reveal in">
+      <div class="eyebrow">Tools &amp; methods</div>
+      <h2>How the work gets made.</h2>
+    </div>
+    <div class="tools-grid" id="toolsGrid">
+    <div class="tool-group reveal in">
+      <h4>Design</h4>
+      <div class="chip-row"><span class="chip">Figma</span><span class="chip">FigJam</span><span class="chip">Wireframing</span><span class="chip">Prototyping</span><span class="chip">Interaction Design</span><span class="chip">Design Systems</span></div>
+    </div>
+  
+    <div class="tool-group reveal in">
+      <h4>Research</h4>
+      <div class="chip-row"><span class="chip">UX Research</span><span class="chip">User Interviews</span><span class="chip">Usability Testing</span><span class="chip">Journey Mapping</span><span class="chip">Behavioral Analysis</span></div>
+    </div>
+  
+    <div class="tool-group reveal in">
+      <h4>Product</h4>
+      <div class="chip-row"><span class="chip">Product Discovery</span><span class="chip">Problem Definition</span><span class="chip">KPI Analysis</span><span class="chip">User Flows</span><span class="chip">Product Strategy</span><span class="chip">Roadmap Collaboration</span></div>
+    </div>
+  
+    <div class="tool-group reveal in">
+      <h4>Ways of Working</h4>
+      <div class="chip-row"><span class="chip">Agile</span><span class="chip">Scrum</span><span class="chip">Cross-functional Collaboration</span><span class="chip">Design Critique</span><span class="chip">Stakeholder Management</span></div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section id="education" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head reveal in" style="margin-bottom:28px;">
+      <div class="eyebrow">Education &amp; teaching</div>
+    </div>
+    <div class="edu-grid" id="eduGrid">
+    <div class="edu-card reveal in">
+      <div class="yr">Education</div>
+      <h4>Bachelor of Graphic Design</h4>
+      <p>University of Fine Arts</p>
+    </div>
+  
+    <div class="edu-card reveal in">
+      <div class="yr">Education</div>
+      <h4>Animation Directing</h4>
+      <p>Soroush College</p>
+    </div>
+  
+    <div class="edu-card reveal in">
+      <div class="yr">Summer 2021</div>
+      <h4>Instructor — UI/UX &amp; Interaction Design</h4>
+      <p>Taught interaction design and UX principles; prepared students for entering the professional design market.</p>
+    </div>
+  </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Let's build the next product experience.</h2>
+    <p class="sub">Open to senior product design and design leadership roles across banking, fintech, and enterprise products.</p>
+    <div class="contact-grid" id="contactGrid">
+    <a class="contact-item" href="mailto:Nasimeskandar@gmail.com" target="_blank" rel="noopener">
+      <div class="k">Email</div>
+      <div class="v">Nasimeskandar@gmail.com</div>
+    </a>
+  
+    <a class="contact-item" href="tel:+989124072087" target="_blank" rel="noopener">
+      <div class="k">Phone</div>
+      <div class="v">+98 912 407 2087</div>
+    </a>
+  
+    <a class="contact-item" href="https://nasimlavasani.my.canva.site/" target="_blank" rel="noopener">
+      <div class="k">Portfolio</div>
+      <div class="v">nasimlavasani.my.canva.site</div>
+    </a>
+  
+    <a class="contact-item" href="https://www.linkedin.com/in/nasim-eskandarlavasani" target="_blank" rel="noopener">
+      <div class="k">LinkedIn</div>
+      <div class="v">Nasim Eskandar Lavasani</div>
+    </a>
+  </div>
+    <div class="foot-bottom">
+      <span>© 2026 Nasim Eskandar Lavasani</span>
+      <span>Senior Product Designer · Design Lead</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---------------- DATA ---------------- */
+const flowData = [
+  {t:"Discover", d:"User research, interviews, behavioral analysis, and pain‑point discovery."},
+  {t:"Define", d:"Problem framing, user journeys, opportunity identification, and experience definition."},
+  {t:"Design", d:"Wireframes, prototypes, interaction design, and design systems."},
+  {t:"Validate", d:"Usability testing, feedback collection, and iterative design."},
+  {t:"Measure", d:"KPI analysis, funnel performance, task completion, and behavioral metrics."},
+  {t:"Improve", d:"Continuous optimization based on evidence, user feedback, and product outcomes."}
+];
+
+const kpiData = [
+  {label:"Key Banking Operations", num:30, dir:"down", desc:"Task time reduced", trend:"down"},
+  {label:"Digital Signature Dashboard", num:25, dir:"down", desc:"User errors reduced", trend:"down"},
+  {label:"Banking Flows", num:22, dir:"down", desc:"Drop‑off rate reduced", trend:"down"},
+  {label:"Operational Success Rate", num:18, dir:"up", desc:"Success rate increased", trend:"up"},
+  {label:"Multi‑account Banking", num:28, dir:"up", desc:"Task completion increased", trend:"up"},
+  {label:"User Onboarding", num:22, dir:"down", desc:"Onboarding time reduced", trend:"down"},
+  {label:"Danayan Product", num:25, dir:"up", desc:"Engagement increased", trend:"up"},
+  {label:"User Experience", num:20, dir:"down", desc:"Friction points reduced", trend:"down"},
+  {label:"Danayan Tasks", num:15, dir:"up", desc:"Task completion increased", trend:"up"}
+];
+
+const experience = [
+  {
+    role:"Senior Product Designer", company:"EFARDA", dates:"Jul 2025 – Present", current:true,
+    tags:"Product Design · UX Strategy · Data-driven Design · Banking Products",
+    bullets:[
+      "Lead the end-to-end product design lifecycle, from research and problem definition through wireframing, interaction design, prototyping, and development handoff.",
+      "Partner closely with Product, Development, and Security teams to deliver cohesive and feasible product experiences.",
+      "Define and analyze product experience KPIs including Task Completion Time, Success Rate, Drop-off Rate, and Error Rate.",
+      "Designed and optimized a digital signature management dashboard to improve operational efficiency.",
+      "Simplified flows for defining and modifying signatory authorities.",
+      "Designed security patterns for joint and corporate accounts while maintaining alignment with banking standards and compliance requirements."
+    ],
+    caseStudy:{title:"A-Bank — Banking Dashboard", impact:"30% ↓ Task Time · 25% ↓ User Errors · 22% ↓ Drop-off · 18% ↑ Success Rate"}
+  },
+  {
+    role:"Senior Product Designer", company:"DANAYAN", dates:"Nov 2024 – Jun 2025",
+    tags:"Product Discovery · UX Research · Product Design",
+    bullets:[
+      "Led the design of two digital products from research and discovery through high-fidelity design and interactive prototyping.",
+      "Conducted user research, journey mapping, and ideation to identify product opportunities and user pain points.",
+      "Translated research insights into practical and scalable design solutions.",
+      "Developed the product's visual personality and strengthened alignment between brand and product experience.",
+      "Continuously tested and iterated the experience based on user needs and market expectations."
+    ],
+    caseStudy:{title:"Danayan App", impact:"25% ↑ Engagement · 15% ↑ Task Completion · 20% ↓ Friction"}
+  },
+  {
+    role:"Team Lead — Product Designer", company:"ADANIC", dates:"Aug 2020 – Aug 2023",
+    tags:"Design Leadership · Product Strategy · UX Research · Banking Products",
+    bullets:[
+      "Led the design team for the end-to-end redesign of Keylead, a multi-account banking application.",
+      "Directed the design process from research and problem definition through interaction design, prototyping, and delivery.",
+      "Facilitated stakeholder workshops to identify critical challenges across banking workflows.",
+      "Established alignment across Design, Product, and Development teams.",
+      "Introduced shared design standards and improved consistency across the design team.",
+      "Delivered scalable and implementation-ready product solutions."
+    ],
+    caseStudy:{title:"Multi-account Banking System — KLD", impact:"30% ↓ User Errors · 28% ↑ Task Completion · 22% ↓ Onboarding Time"}
+  },
+  {
+    role:"Product Designer — UI/UX", company:"SADAD PSP", dates:"May 2019 – Jul 2020",
+    tags:"UX Strategy · User Research · Flow Design",
+    bullets:[
+      "Contributed to UX strategy and led design activities within the team.",
+      "Conducted user research and secondary research to identify user pain points and sources of dissatisfaction.",
+      "Analyzed behavioral data and translated insights into effective UX solutions.",
+      "Designed and optimized product user flows, wireframes, and interactive prototypes.",
+      "Focused on improving user onboarding and overall experience efficiency."
+    ]
+  },
+  {
+    role:"Web UI / UX Designer", company:"TOSAN & TECHVEST", dates:"Apr 2016 – Jun 2019",
+    tags:"B2B & B2C · Fintech · Visual Design",
+    bullets:[
+      "Conducted UX research to improve B2B and B2C digital experiences.",
+      "Designed UI and UX solutions for digital products and fintech projects.",
+      "Collaborated with technical and marketing teams to translate business requirements into design solutions.",
+      "Contributed to branding and visual identity initiatives across platforms."
+    ]
+  },
+  {
+    role:"UI / Visual Designer", company:"DATA LEADING PISHRO", dates:"Jan 2015 – Mar 2016",
+    tags:"Visual Direction · Brand",
+    bullets:[
+      "Designed UI, web elements, graphics, and storyboards for digital products.",
+      "Contributed to product strategy and brand design decisions.",
+      "Developed visual directions for product features and supported advertising campaigns."
+    ]
+  },
+  {
+    role:"Junior Graphic Designer", company:"MILATECHNUTRI", dates:"Dec 2013 – Jul 2014",
+    tags:"Graphic Design · Branding",
+    bullets:[
+      "Collaborated with Marketing and Content teams on visual campaigns.",
+      "Designed graphics, posters, brochures, and packaging.",
+      "Applied brand guidelines across visual assets and digital product elements."
+    ]
+  }
+];
+
+const expertise = [
+  {title:"Product Design", items:["Product Discovery & Problem Definition","UX Research & User Interviews","User Journey & Service Flow Mapping","Information Architecture","Wireframing & Prototyping","Interaction Design","Usability Testing","Design Systems","End-to-End Product Design","Data-informed Design"]},
+  {title:"Product & Strategy", items:["Business & User Requirement Analysis","Opportunity Identification & Prioritization","Business Requirements → UX Solutions","KPI Definition & Analysis","Behavioral & Funnel Analysis","Product Strategy Contribution","Roadmap Collaboration","Stakeholder Management","Cross-functional Decision Making"]},
+  {title:"Design Leadership", items:["Team Leadership & Mentoring","Design Process & Workflow Definition","Quality Standards & Design Reviews","Feedback & Critique","Design / Product / Eng Alignment","Cross-functional Project Leadership","End-to-End Delivery Management"]}
+];
+
+const tools = [
+  {group:"Design", items:["Figma","FigJam","Wireframing","Prototyping","Interaction Design","Design Systems"]},
+  {group:"Research", items:["UX Research","User Interviews","Usability Testing","Journey Mapping","Behavioral Analysis"]},
+  {group:"Product", items:["Product Discovery","Problem Definition","KPI Analysis","User Flows","Product Strategy","Roadmap Collaboration"]},
+  {group:"Ways of Working", items:["Agile","Scrum","Cross-functional Collaboration","Design Critique","Stakeholder Management"]}
+];
+
+const education = [
+  {yr:"Education", title:"Bachelor of Graphic Design", sub:"University of Fine Arts"},
+  {yr:"Education", title:"Animation Directing", sub:"Soroush College"},
+  {yr:"Summer 2021", title:"Instructor — UI/UX & Interaction Design", sub:"Taught interaction design and UX principles; prepared students for entering the professional design market."}
+];
+
+const contact = [
+  {k:"Email", v:"Nasimeskandar@gmail.com", href:"mailto:Nasimeskandar@gmail.com"},
+  {k:"Phone", v:"+98 912 407 2087", href:"tel:+989124072087"},
+  {k:"Portfolio", v:"nasimlavasani.my.canva.site", href:"https://nasimlavasani.my.canva.site/"},
+  {k:"LinkedIn", v:"Nasim Eskandar Lavasani", href:"https://www.linkedin.com/in/nasim-eskandarlavasani"}
+];
+
+/* ---------------- RENDER ---------------- */
+function sparkPath(trend){
+  const up = "M2,28 C10,26 16,20 24,18 C32,16 40,10 46,4";
+  const down = "M2,4 C10,8 16,14 24,16 C32,18 40,24 46,28";
+  return trend === "up" ? up : down;
+}
+
+function renderKpis(){
+  const grid = document.getElementById('dashGrid');
+  grid.innerHTML = kpiData.map((k,i)=>`
+    <div class="kpi-card reveal" style="transition-delay:${(i%3)*0.06}s">
+      <div class="kpi-top">
+        <div class="kpi-label">${k.label}</div>
+        <div class="kpi-dir ${k.dir}">${k.dir === 'up' ? '↑' : '↓'} ${k.dir}</div>
+      </div>
+      <div class="kpi-num"><span class="count" data-target="${k.num}">0</span><span class="pct">%</span></div>
+      <div class="kpi-desc">${k.desc}</div>
+      <svg class="kpi-spark" viewBox="0 0 48 32" preserveAspectRatio="none">
+        <path d="${sparkPath(k.trend)}" fill="none" stroke="${k.trend==='up' ? 'var(--up)' : 'var(--violet-500)'}" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+  `).join('');
+}
+
+function renderTimeline(){
+  const el = document.getElementById('timeline');
+  el.innerHTML = experience.map((e,i)=>`
+    <div class="tl-item ${e.current ? 'current':''} reveal">
+      <details class="tl-card" ${i===0 ? 'open':''}>
+        <summary>
+          <div class="tl-head-left">
+            <div class="tl-role">${e.role}</div>
+            <div class="tl-company">${e.company}</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px;">
+            <div class="tl-dates">${e.dates}</div>
+            <div class="tl-toggle">+</div>
+          </div>
+        </summary>
+        <div class="tl-body">
+          <div class="mono" style="font-size:12px;color:var(--ink-faint);margin-top:14px;">${e.tags}</div>
+          <ul>${e.bullets.map(b=>`<li>${b}</li>`).join('')}</ul>
+          ${e.caseStudy ? `<div class="tl-case"><b>Selected case study — ${e.caseStudy.title}</b>${e.caseStudy.impact}</div>` : ''}
+        </div>
+      </details>
+    </div>
+  `).join('');
+}
+
+function renderExpertise(){
+  const el = document.getElementById('expertiseGrid');
+  el.innerHTML = expertise.map(g=>`
+    <div class="exp-card reveal">
+      <h3><span class="dot"></span>${g.title}</h3>
+      <ul>${g.items.map(i=>`<li>${i}</li>`).join('')}</ul>
+    </div>
+  `).join('');
+}
+
+function renderProcess(){
+  const el = document.getElementById('processGrid');
+  el.innerHTML = flowData.map((f,i)=>`
+    <div class="proc-card reveal" style="transition-delay:${(i%3)*0.06}s">
+      <div class="proc-num">0${i+1}</div>
+      <div class="proc-title">${f.t}</div>
+      <div class="proc-desc">${f.d}</div>
+    </div>
+  `).join('');
+}
+
+function renderTools(){
+  const el = document.getElementById('toolsGrid');
+  el.innerHTML = tools.map(g=>`
+    <div class="tool-group reveal">
+      <h4>${g.group}</h4>
+      <div class="chip-row">${g.items.map(i=>`<span class="chip">${i}</span>`).join('')}</div>
+    </div>
+  `).join('');
+}
+
+function renderEdu(){
+  const el = document.getElementById('eduGrid');
+  el.innerHTML = education.map(e=>`
+    <div class="edu-card reveal">
+      <div class="yr">${e.yr}</div>
+      <h4>${e.title}</h4>
+      <p>${e.sub}</p>
+    </div>
+  `).join('');
+}
+
+function renderContact(){
+  const el = document.getElementById('contactGrid');
+  el.innerHTML = contact.map(c=>`
+    <a class="contact-item" href="${c.href}" target="_blank" rel="noopener">
+      <div class="k">${c.k}</div>
+      <div class="v">${c.v}</div>
+    </a>
+  `).join('');
+}
+
+renderKpis(); renderTimeline(); renderExpertise(); renderProcess(); renderTools(); renderEdu(); renderContact();
+
+/* ---------------- HERO FLOW STEPPER ---------------- */
+const flowSteps = document.getElementById('flowSteps');
+const flowPanel = document.getElementById('flowPanel');
+flowSteps.addEventListener('click', (e)=>{
+  const btn = e.target.closest('.flow-step');
+  if(!btn) return;
+  flowSteps.querySelectorAll('.flow-step').forEach(s=>s.classList.remove('active'));
+  btn.classList.add('active');
+  const i = +btn.dataset.i;
+  flowPanel.innerHTML = `<b>${flowData[i].t}.</b> ${flowData[i].d}`;
+});
+
+/* ---------------- SCROLL REVEAL ---------------- */
+const revealObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('in');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, {threshold:0.12});
+document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
+
+/* ---------------- KPI COUNT-UP ---------------- */
+const countObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      const el = entry.target;
+      const target = +el.dataset.target;
+      const duration = 900;
+      const start = performance.now();
+      function tick(now){
+        const p = Math.min((now-start)/duration, 1);
+        const eased = 1 - Math.pow(1-p, 3);
+        el.textContent = Math.round(eased*target);
+        if(p<1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+      countObserver.unobserve(el);
+    }
+  });
+}, {threshold:0.4});
+document.querySelectorAll('.count').forEach(el=>countObserver.observe(el));
+
+/* ---------------- ACTIVE NAV LINK ---------------- */
+const sections = ['impact','experience','expertise','process','tools'].map(id=>document.getElementById(id));
+const navA = document.querySelectorAll('#navLinks a');
+const navObserver = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    const id = entry.target.id;
+    const link = document.querySelector(`#navLinks a[href="#${id}"]`);
+    if(entry.isIntersecting && link){
+      navA.forEach(a=>a.classList.remove('active'));
+      link.classList.add('active');
+    }
+  });
+}, {threshold:0.3, rootMargin:"-80px 0px -60% 0px"});
+sections.forEach(s=> s && navObserver.observe(s));
+</script>
+
+
+</body></html>
